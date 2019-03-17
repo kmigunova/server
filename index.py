@@ -1,7 +1,5 @@
-from flask import Flask, session, redirect, render_template, flash, url_for, request
-from werkzeug.security import generate_password_hash, check_password_hash
-from models import UsersModel, AccessoriesModel, DealersModel
-from forms import LoginForm, RegisterForm, AddCarForm, SearchPriceForm, SearchDealerForm, AddDealerForm
+from flask import Flask, session, redirect, render_template, request
+from models import UsersModel, AccessoriesModel
 from db import DB
 
 
