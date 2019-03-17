@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <p>Введите порядковый номер товара из <a href="http://127.0.0.1:8080/index">таблицы</a>.<br>
+    Отсчёт сверху вниз.</p>
+
+    <form action="" method="post">
+        <input type="text" class="form-control" id="num" placeholder="Введите порядковый номер" name="num">
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="acceptRules" name="accept">
+            <label class="form-check-label" for="acceptRules">Пришлите мне подтверждение на почту</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Заказать</button>
+    </form>
+{% endblock %}

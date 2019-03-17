@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Войдите и получите неограниченый доступ к возможностям нашего сайта!</h1>
+    <form action="" method="post">
+        <input type="text" class="form-control" id="login" placeholder="Введите логин" name="username">
+        <input type="password" class="form-control" id="password" placeholder="Введите пароль" name="password">
+        <button type="submit" class="btn btn-primary">Войти</button>
+    </form>
+    <p>Нет аккаунта? Нажмите <a href="http://127.0.0.1:8080/register">сюда</a>, чтобы зарегистрироваться!</p>
+{% endblock %}
