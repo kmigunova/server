@@ -18,17 +18,14 @@ def index():
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
-    if request.method == 'GET':
-        return render_template('login.html', title='Вход')
+    if 'username' not in session:
+        if request.method == 'GET':
+            return render_template('login.html', title='Вход')
     return redirect('/order')
 
 
 @app.route('/logout')
 def logout():
-    """
-    Выход из системы
-    :return:
-    """
     session.pop('username', 0)
     return redirect('/login')
 
